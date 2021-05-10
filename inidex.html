@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Document</title>
+    <script src="script.js" async></script>
+    <script src="jquery-1.7.2.js" async></script>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <p class="header_title">Итернет магазин</p>
+        </div>
+    </header>
+    <main class="main">
+        <p class="container main_title ">Список товаров</p>
+        <div id="productList" class="product_list basket_list_not container">
+
+        </div>
+        <div class="block">
+            <h1 id="basket_title" class="container main_title extremum-click">Состав корзины</h1>
+            <div id="basket" class="basket_list container extremum-slide">
+
+            </div>
+        </div>
+        <div class="block">
+            <h1 class="container main_title extremum-click">Адрес доставки</h1>
+            <div class="container adress_content extremum-slide">
+
+            </div>
+        </div>
+        <div class="block">
+            <h1 class="container main_title extremum-click ">Коментарии</h1>
+            <div class="container coments_content extremum-slide">
+
+            </div>
+        </div>
+
+    </main>
+    <footer class="footer">
+
+    </footer>
+    <script>
+        $(".extremum-click").click(function () {
+            $(this).siblings(".extremum-slide").slideToggle("slow");
+        });
+    </script>
+</body>
+
+</html>

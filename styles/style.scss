@@ -1,0 +1,125 @@
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.header {
+    background: url(pictures/head.jpg) no-repeat center center / cover;
+    .header_title {
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 600;
+        font-size: 42px;
+        line-height: 17px;
+
+        color: black;
+
+        text-align: center;
+
+        padding: 50px 0px;
+    }
+}
+
+.main {
+    background-color: #c4c3c9;
+    .main_title {
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 17px;
+
+        color: black;
+
+        text-align: center;
+
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+    .product_list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .product {
+            width: 30%;
+            text-align: center;
+            .product_name {
+                text-decoration: none;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 17px;
+                color: black;
+                padding-bottom: 10px;
+            }
+            .product_price {
+                text-decoration: none;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 17px;
+                color: black;
+                padding-bottom: 10px;
+            }
+            .product_button {
+                display: block;
+                border: none;
+                outline: none;
+                position: relative;
+                left: 50%;
+                transform: translate(-50%, 0);
+                background-color: wheat;
+                padding: 4px 12px;
+                border-radius: 5px;
+                &:hover {
+                    background-color: darkslategray;
+                    color: wheat;
+                }
+            }
+        }
+        #all_basket-price {
+            display: block;
+            width: 100%;
+            text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 300;
+            font-size: 24px;
+            line-height: 17px;
+            color: black;
+            margin-top: 20px;
+        }
+    }
+    .basket_list {
+        display: flex;
+        flex-wrap: wrap;
+        .basket_item {
+            padding: 5px 10px;
+            .basket_name {
+                text-decoration: none;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 17px;
+                color: black;
+                margin-bottom: 10px;
+            }
+            .basket_price {
+                text-decoration: none;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 17px;
+                color: black;
+            }
+        }
+    }
+}
+
+.footer {
+    background: #c4c3c9;
+}
+.extremum-slide {
+    border: 1px solid;
+    border-radius: 50px;
+    padding: 50px;
+}
